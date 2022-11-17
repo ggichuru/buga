@@ -35,7 +35,7 @@ contract EmitContractTest is Test {
         vm.expectEmit(true, true, false, false);
 
         // The event we expected
-        emit Transfer(address(this), address(1337), 1337);
+        emit Transfer(address(this), address(1337), 1338);
 
         // The event we get
         emiter.t();
