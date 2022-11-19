@@ -11,6 +11,7 @@ contract TestCall {
         emit Log("fallback was called");
     }
 
+    // Function to be called by call
     function foo(string memory _message, uint256 _x)
         external
         payable
@@ -35,7 +36,7 @@ contract Call {
     }
 
     // calling a function that doesnt exist will invoke the fallback
-    // Without fallback ,the tx would fail 
+    // Without fallback ,the tx would fail
     function callDoesntExist(address _test) external {
         (bool success, ) = _test.call(abi.encodeWithSignature("callDoesnt()"));
 
