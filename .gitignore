@@ -10,4 +10,5 @@ out/
 # Dotenv file
 .env
 
-*/artifacts
+# ignore all directories with the name artifacts
+artifacts/
