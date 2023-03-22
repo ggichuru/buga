@@ -17,6 +17,10 @@ contract WakulimaTokenTest is Test {
     }
 
     function testName() public {
+        assertEq(token.name(), "Wakulima Token");
+    }
+
+    function testSymbol() public {
         assertEq(token.symbol(), "WKM");
     }
 }
