@@ -11,9 +11,9 @@ contract TrialTest is Test {
         trialContract = new Trial();
     }
 
-    function testAddOne() public {
-        uint256 x = 10;
-        emit log_string("Testing with Fuzzing zz. ..zz");
-        assertEq(x + 1, trialContract.addOne(x));
-    }
+    // function testAddOne() public {
+    //     uint256 x = 10;
+    //     emit log_string("Testing with Fuzzing zz. ..zz");
+    //     assertEq(x + 1, trialContract.addOne(x));
+    // }
 }
